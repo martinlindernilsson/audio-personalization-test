@@ -12,11 +12,14 @@
 
 
 	<body>
-		<h1>Mixing Two Sounds</h1>
-		<p>This demo illustrates how to play two looped sounds and mix between them using 
-			<a href="https://github.com/hanslindetorp/WebAudioXML">WebAudioXML</a> - an XML based language to implement interactive audio 
-		into a web page.</p>
-		<p>Open the <a href="audio.xml">audio.xml</a> file to se the audio configuration.</p>
+		<h1>Listening test</h1>
+		<p>Consider that one were to offer an additional, compressed version of select 
+			broadcasted content to increase intelligibility in noisy environments. </p>
+		<p>You are about participate in a sound test where varying amounts of compression 
+			will be applied to sound files and you will be asked to give your opinion on what 
+			would be a good amount of compression for such a feature. The effect should be noticable, 
+			it should however not degrade the sound quality too much or make the content straining to listen to.</p>
+		
 		<p>The connections from HTML to let the buttons and slider control WebAudioXML is using
 			the data-waxml attributes:
 		</p>
@@ -26,6 +29,9 @@
 		<button data-waxml-click-stop=".loop">STOP</button>
 		A<input type="range" min="0" max="100" value="0" data-waxml-target="$mix" />B
 		
+		<button data-waxml-click-start=".loop">START</button>
+		<button data-waxml-click-stop=".loop">STOP</button>
+		A<input type="range" min="0" max="100" value="0" data-waxml-target="$mix" />B
 		
 		<script src="plugins/WebAudioXML.js" data-source="audio.xml"></script>
 
