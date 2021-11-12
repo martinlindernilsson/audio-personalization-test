@@ -11,11 +11,11 @@
     -->
 
     <Mixer gain="1-$mix/100">
-        <AudioBufferSourceNode class="loop" src="audio/loopA.mp3" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode src="audio/humorhimlenOff.wav" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <Mixer gain="$mix/100">
-        <AudioBufferSourceNode class="loop" src="audio/loopB.mp3" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode src="audio/humorhimlen10.wav" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
 
@@ -33,12 +33,12 @@
     <var name="mix_b" value="$mix" default="0" mapin="0,100" mapout="0,1" curve="0.5"></var>
 
     <Mixer gain="$mix_a">
-        <AudioBufferSourceNode src="audio/slottet.mp3" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/humorhimlenOff.wav" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <Mixer gain="$mix_b">
-        <AudioBufferSourceNode src="audio/loopA.wav" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/humorhimlen10.wav" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
-
+    
 </Audio>
